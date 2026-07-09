@@ -5,7 +5,7 @@ terraform {
     organization = "xhavel17orgtfe"
 
     workspaces {
-      name = "edu-hashicorp-tfe"
+      name = "edu-hashicorp-tfe-aws"
     }
   }
 
