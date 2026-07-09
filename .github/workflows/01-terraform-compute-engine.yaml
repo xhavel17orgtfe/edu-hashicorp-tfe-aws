@@ -19,6 +19,9 @@ jobs:
     name: terraform plan
     runs-on:
       group: default
+    defaults:
+      run:
+        working-directory: compute-engine
     # container:
     #   image: cr.rak.farnostrakvice.cz:50443/my/my-gcp-terraform:latest
 
@@ -47,6 +50,9 @@ jobs:
     name: terraform apply
     runs-on:
       group: default
+    defaults:
+      run:
+        working-directory: compute-engine
     # container:
     #   image: cr.rak.farnostrakvice.cz:50443/my/my-gcp-terraform:latest
     needs: plan
