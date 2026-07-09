@@ -2,9 +2,9 @@ name: Deploy test HashiCorp Terraform Enterprise and sentinel
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   pull_request:
     branches: 
       - main
